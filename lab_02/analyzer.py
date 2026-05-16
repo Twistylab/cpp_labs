@@ -29,7 +29,7 @@ if __name__ == "__main__":
     ax = fig.add_subplot(1, 1, 1)
     
     ax.plot(df_cpp["time"], df_cpp["n"], color="red", label="cpp")
-    ax.plot(df_py["time"], df_py["n"], color="red", label="py")
+    ax.plot(df_py["time"], df_py["n"], color="blue", label="py")
     ax.legend()
     ax.set_xlabel("time")
     ax.set_ylabel("n")

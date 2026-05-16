@@ -7,7 +7,7 @@ def calculate(x=10):
 
 if __name__ == "__main__":
     data = {"time": [], "n": []}
-    for n in range(int(1e3), int(1e4), int(1e3)):
+    for n in range(int(1e3), int(1e6), int(1e3)):
         start_time = time.time()
         duration = 0
         for i in range(n):

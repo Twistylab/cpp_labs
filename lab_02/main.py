@@ -12,8 +12,8 @@ if __name__ == "__main__":
         duration = 0
         for i in range(n):
             res = calculate()
-            end_time = time.time()
-            duration = end_time - start_time
+        end_time = time.time()
+        duration = end_time - start_time
         data["time"].append(duration)
         data["n"].append(n)
     with open('result_py.csv', 'w', newline='', encoding='utf-8') as file:

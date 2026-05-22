@@ -11,11 +11,8 @@ int calculate() {
 }
 
 
-
-int main()
-
-{
-    long n;
+int main() {
+    long long n;
     double time;
     ofstream output_file("result_cpp.csv");
     output_file << "time,n\n";
@@ -32,5 +29,6 @@ int main()
 	output_file << time << "," << n << "\n";
     }
     output_file.close();
+    return 0;
 }
 

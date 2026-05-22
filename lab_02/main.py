@@ -18,7 +18,7 @@ if __name__ == "__main__":
         data["n"].append(n)
     with open('result_py.csv', 'w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
-        writer.writerow(data.keys())
+        writer.writerow([*data.keys()])
 
-        for row in zip(*data.values()):
-            writer.writerow(row)
+        for t, n in zip(data["time"], data["n"]):
+            writer.writerow([t, n])

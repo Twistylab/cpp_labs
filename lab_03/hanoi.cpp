@@ -20,6 +20,9 @@ void AddNode(int ring, char from, char to)
     node->from = from;
     node->to = to;
 
+    node->next = nullptr;
+    node->prev = tail;
+
 
     if (tail == nullptr)
         head = node;

@@ -8,6 +8,8 @@ git pull origin prd
 
 git merge stg -m "Auto merge stg to prd"
 
+gir merge stg -m "Auto merge stg to prd"
+
 TAG="prd-$(date +%Y-%m-%d-%H%M%S)"
 git tag -a "$TAG" -m "Moved to prd $TAG"
 

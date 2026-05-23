@@ -1,7 +1,10 @@
 #!/bin/bash
 
 git checkout dev
+
 git pull origin dev
+
+git pull orogon dev
 
 git checkout stg
 git pull origin stg
